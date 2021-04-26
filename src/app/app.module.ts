@@ -27,6 +27,7 @@ import {
 } from "@syncfusion/ej2-angular-dropdowns";
 import { ChartModule } from "@syncfusion/ej2-angular-charts";
 import {
+  ButtonModule,
   CheckBoxModule,
   RadioButtonModule,
   SwitchModule
@@ -51,8 +52,10 @@ import {
   DataLabelService,
   LineSeriesService
 } from "@syncfusion/ej2-angular-charts";
+import { ButtonExampleComponent } from "./components/button-example.component";
 
 const routes: Routes = [
+  { path: "button", component: ButtonExampleComponent },
   { path: "chart", component: ChartComponent },
   { path: "checkbox", component: CheckboxComponent },
   { path: "combobox", component: ComboboxComponent },
@@ -88,7 +91,8 @@ const routes: Routes = [
     RadioButtonModule,
     SwitchModule,
     ToastModule,
-    TreeGridModule
+    TreeGridModule,
+    ButtonModule
   ],
   declarations: [
     AppComponent,
@@ -107,7 +111,8 @@ const routes: Routes = [
     SwitchComponent,
     TextBoxComponent,
     ToastExampleComponent,
-    TreeGridComponent
+    TreeGridComponent,
+    ButtonExampleComponent
   ],
   providers: [
     CategoryService,
