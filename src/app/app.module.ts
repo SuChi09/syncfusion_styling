@@ -33,7 +33,11 @@ import {
 } from "@syncfusion/ej2-angular-buttons";
 import { DatePickerModule } from "@syncfusion/ej2-angular-calendars";
 import { DialogModule } from "@syncfusion/ej2-angular-popups";
-import { GridModule } from "@syncfusion/ej2-angular-grids";
+import {
+  FreezeService,
+  GridModule,
+  SelectionService
+} from "@syncfusion/ej2-angular-grids";
 import { ListViewModule } from "@syncfusion/ej2-angular-lists";
 import { NumericTextBoxModule } from "@syncfusion/ej2-angular-inputs";
 import { ToastModule } from "@syncfusion/ej2-angular-notifications";
@@ -110,7 +114,9 @@ const routes: Routes = [
     LegendService,
     TooltipService,
     DataLabelService,
-    LineSeriesService
+    LineSeriesService,
+    FreezeService,
+    SelectionService
   ],
   bootstrap: [AppComponent]
 })

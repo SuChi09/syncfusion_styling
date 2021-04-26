@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from "@angular/core";
+import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 
 @Component({
   selector: "app-dialog",
@@ -15,10 +15,12 @@ import { Component, ElementRef, ViewChild } from "@angular/core";
     <ejs-dialog
       id="dialog"
       #ejDialog
+      header="Dialog"
       [visible]="false"
-      content="This is a Dialog with content"
+      content="This is a Dialog with button and primary button"
       [target]="targetElement"
       width="250px"
+      [buttons]="buttons"
     >
     </ejs-dialog>
   `,
@@ -36,10 +38,9 @@ import { Component, ElementRef, ViewChild } from "@angular/core";
     `
   ]
 })
-export class DialogComponent {
+export class DialogComponent implements OnInit {
   @ViewChild("ejDialog") ejDialog: DialogComponent;
   @ViewChild("container", { read: ElementRef }) container: ElementRef;
-
   targetElement: HTMLElement;
 
   ngOnInit() {
@@ -49,6 +50,26 @@ export class DialogComponent {
   initilaizeTarget: any = () => {
     this.targetElement = this.container.nativeElement.parentElement;
   };
+
+  hideDialog: any = () => {
+    this.ejDialog.hide();
+  };
+
+  buttons: Object = [
+    {
+      click: this.hideDialog.bind(this),
+      buttonModel: {
+        content: "OK",
+        isPrimary: true
+      }
+    },
+    {
+      click: this.hideDialog.bind(this),
+      buttonModel: {
+        content: "Cancel"
+      }
+    }
+  ];
 
   onOpenDialog = function(event: any): void {
     this.ejDialog.show();

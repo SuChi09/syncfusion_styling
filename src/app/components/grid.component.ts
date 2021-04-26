@@ -3,17 +3,38 @@ import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-grid",
   template: `
-    <ejs-grid [dataSource]="data">
+    <ejs-grid [dataSource]="data" height="320" width="1000">
       <e-columns>
         <e-column
           field="OrderID"
           headerText="Order ID"
           textAlign="Right"
           width="90"
+          freeze="Left"
         ></e-column>
         <e-column
           field="CustomerID"
           headerText="Customer ID"
+          width="120"
+        ></e-column>
+        <e-column
+          field="EmployeeID"
+          headerText="Employee ID"
+          width="120"
+        ></e-column>
+        <e-column
+          field="ShipName"
+          headerText="Ship Name"
+          width="120"
+        ></e-column>
+        <e-column
+          field="ShipCity"
+          headerText="Ship City"
+          width="120"
+        ></e-column>
+        <e-column
+          field="ShipAddress"
+          headerText="Ship Address"
           width="120"
         ></e-column>
         <e-column
@@ -29,6 +50,14 @@ import { Component, OnInit } from "@angular/core";
           textAlign="Right"
           format="yMd"
           width="120"
+          freeze="Right"
+        ></e-column>
+        <e-column
+          field="ShipCountry"
+          headerText="Ship Country"
+          textAlign="Right"
+          width="120"
+          freeze="Right"
         ></e-column>
       </e-columns>
     </ejs-grid>

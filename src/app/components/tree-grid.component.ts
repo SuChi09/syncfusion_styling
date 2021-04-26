@@ -7,6 +7,8 @@ import { Component, OnInit } from "@angular/core";
       [dataSource]="data"
       [treeColumnIndex]="1"
       childMapping="subtasks"
+      height="320"
+      width="1000"
     >
       <e-columns>
         <e-column
