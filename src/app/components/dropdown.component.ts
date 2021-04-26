@@ -3,7 +3,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "app-dropdown",
   template: `
-    <ejs-dropdownlist id="ddlelement" [dataSource]="data"></ejs-dropdownlist>
+    <ejs-dropdownlist width="240" [dataSource]="data"></ejs-dropdownlist>
   `,
   styles: []
 })

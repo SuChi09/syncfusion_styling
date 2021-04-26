@@ -22,12 +22,16 @@ import { ListViewComponent } from "./components/list-view.component";
 
 import {
   ComboBoxModule,
-  DropDownListModule
+  DropDownListModule,
+  MultiSelectModule
 } from "@syncfusion/ej2-angular-dropdowns";
 import { ChartModule } from "@syncfusion/ej2-angular-charts";
 import { CheckBoxModule } from "@syncfusion/ej2-angular-buttons";
 import { DatePickerModule } from "@syncfusion/ej2-angular-calendars";
 import { DialogModule } from "@syncfusion/ej2-angular-popups";
+import { GridModule } from "@syncfusion/ej2-angular-grids";
+import { ListViewModule } from "@syncfusion/ej2-angular-lists";
+import { NumericTextBoxModule } from "@syncfusion/ej2-angular-inputs";
 
 const routes: Routes = [
   { path: "chart", component: ChartComponent },
@@ -57,7 +61,11 @@ const routes: Routes = [
     CheckBoxModule,
     ComboBoxModule,
     DatePickerModule,
-    DialogModule
+    DialogModule,
+    GridModule,
+    ListViewModule,
+    MultiSelectModule,
+    NumericTextBoxModule
   ],
   declarations: [
     AppComponent,

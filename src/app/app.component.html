@@ -2,36 +2,43 @@
 
 <h6>Overview</h6>
 
-<nav>
-  <ul>
-    <li><a routerLink="/chart" routerLinkActive="active">Chart</a></li>
-    <li><a routerLink="/checkbox" routerLinkActive="active">CheckBox</a></li>
-    <li><a routerLink="/combobox" routerLinkActive="active">ComboBox</a></li>
-    <li>
-      <a routerLink="/datepicker" routerLinkActive="active">Datepicker</a>
-    </li>
-    <li><a routerLink="/dialog" routerLinkActive="active">Dialog</a></li>
-    <li><a routerLink="/dropdown" routerLinkActive="active">Dropdown</a></li>
-    <li><a routerLink="/grid" routerLinkActive="active">Grid</a></li>
-    <li><a routerLink="/listview" routerLinkActive="active">ListView</a></li>
-    <li>
-      <a routerLink="/multiselect" routerLinkActive="active">Multiselect</a>
-    </li>
-    <li>
-      <a routerLink="/numerictextbox" routerLinkActive="active"
-        >NumericTextBox</a
-      >
-    </li>
-    <li>
-      <a routerLink="/radiobutton" routerLinkActive="active">RadioButton</a>
-    </li>
-    <li><a routerLink="/switch" routerLinkActive="active">Switch</a></li>
-    <li><a routerLink="/textbox" routerLinkActive="active">TextBox</a></li>
-    <li><a routerLink="/toast" routerLinkActive="active">Toast</a></li>
-    <li><a routerLink="/treegrid" routerLinkActive="active">TreeGrid</a></li>
-  </ul>
-</nav>
+<div style="display: inline-block;">
+  <nav>
+    <ul style="float: left;">
+      <li><a routerLink="/chart" routerLinkActive="active">Chart</a></li>
+      <li><a routerLink="/checkbox" routerLinkActive="active">CheckBox</a></li>
+      <li><a routerLink="/combobox" routerLinkActive="active">ComboBox</a></li>
+      <li>
+        <a routerLink="/datepicker" routerLinkActive="active">Datepicker</a>
+      </li>
+      <li><a routerLink="/dialog" routerLinkActive="active">Dialog</a></li>
+      <li><a routerLink="/dropdown" routerLinkActive="active">Dropdown</a></li>
+      <li><a routerLink="/grid" routerLinkActive="active">Grid</a></li>
+      <li><a routerLink="/listview" routerLinkActive="active">ListView</a></li>
+    </ul>
+
+    <ul style="float: left; margin-left: 60px">
+      <li>
+        <a routerLink="/multiselect" routerLinkActive="active">Multiselect</a>
+      </li>
+      <li>
+        <a routerLink="/numerictextbox" routerLinkActive="active"
+          >NumericTextBox</a
+        >
+      </li>
+      <li>
+        <a routerLink="/radiobutton" routerLinkActive="active">RadioButton</a>
+      </li>
+      <li><a routerLink="/switch" routerLinkActive="active">Switch</a></li>
+      <li><a routerLink="/textbox" routerLinkActive="active">TextBox</a></li>
+      <li><a routerLink="/toast" routerLinkActive="active">Toast</a></li>
+      <li><a routerLink="/treegrid" routerLinkActive="active">TreeGrid</a></li>
+    </ul>
+  </nav>
+</div>
 
 <h6>Selected Component</h6>
 
-<router-outlet></router-outlet>
+<div class="component-container">
+  <router-outlet></router-outlet>
+</div>
