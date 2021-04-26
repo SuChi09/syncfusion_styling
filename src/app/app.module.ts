@@ -10,8 +10,6 @@ import { MultiselectComponent } from "./components/multiselect.component";
 import { TextBoxComponent } from "./components/text-box.component";
 import { GridComponent } from "./components/grid.component";
 import { ToastComponent } from "./components/toast.component";
-
-import { DropDownListModule } from "@syncfusion/ej2-angular-dropdowns";
 import { ChartComponent } from "./components/chart.component";
 import { CheckboxComponent } from "./components/checkbox.component";
 import { ComboboxComponent } from "./components/combobox.component";
@@ -21,6 +19,15 @@ import { SwitchComponent } from "./components/switch.component";
 import { RadioButtonComponent } from "./components/radio-button.component";
 import { NumericTextBoxComponent } from "./components/numeric-text-box.component";
 import { ListViewComponent } from "./components/list-view.component";
+
+import {
+  ComboBoxModule,
+  DropDownListModule
+} from "@syncfusion/ej2-angular-dropdowns";
+import { ChartModule } from "@syncfusion/ej2-angular-charts";
+import { CheckBoxModule } from "@syncfusion/ej2-angular-buttons";
+import { DatePickerModule } from "@syncfusion/ej2-angular-calendars";
+import { DialogModule } from "@syncfusion/ej2-angular-popups";
 
 const routes: Routes = [
   { path: "chart", component: ChartComponent },
@@ -45,7 +52,12 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes),
-    DropDownListModule
+    DropDownListModule,
+    ChartModule,
+    CheckBoxModule,
+    ComboBoxModule,
+    DatePickerModule,
+    DialogModule
   ],
   declarations: [
     AppComponent,

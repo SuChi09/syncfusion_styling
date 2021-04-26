@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-chart",
   template: `
-    TODO
+    <ejs-chart id="chart-container"></ejs-chart>
   `,
   styles: []
 })

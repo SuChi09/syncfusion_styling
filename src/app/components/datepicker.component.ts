@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-datepicker",
   template: `
-    TODO
+    <ejs-datepicker></ejs-datepicker>
   `,
   styles: []
 })
