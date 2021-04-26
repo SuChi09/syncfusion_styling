@@ -3,8 +3,10 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-combobox",
   template: `
-    <ejs-combobox id="comboelement"></ejs-combobox>
+    <ejs-combobox width="240" [dataSource]="data"></ejs-combobox>
   `,
   styles: []
 })
-export class ComboboxComponent {}
+export class ComboboxComponent {
+  data: string[] = ["Cricket", "Football", "Rugby", "Snooker", "Tennis"];
+}

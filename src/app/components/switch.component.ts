@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-switch",
   template: `
-    TODO
+    <ejs-switch [checked]="true"></ejs-switch>
   `,
   styles: []
 })
