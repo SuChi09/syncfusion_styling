@@ -38,18 +38,9 @@ import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
     `
   ]
 })
-export class DialogComponent implements OnInit {
+export class DialogComponent {
   @ViewChild("ejDialog") ejDialog: DialogComponent;
   @ViewChild("container", { read: ElementRef }) container: ElementRef;
-  targetElement: HTMLElement;
-
-  ngOnInit() {
-    this.initilaizeTarget();
-  }
-
-  initilaizeTarget: any = () => {
-    this.targetElement = this.container.nativeElement.parentElement;
-  };
 
   hideDialog: any = () => {
     this.ejDialog.hide();
