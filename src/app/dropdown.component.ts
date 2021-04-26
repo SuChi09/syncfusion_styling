@@ -3,7 +3,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "app-dropdown",
   template: `
-    <h1>Hello {{ name }}!</h1>
+    <ejs-dropdownlist id="ddlelement" [dataSource]="data"></ejs-dropdownlist>
   `,
   styles: [
     `
@@ -14,5 +14,5 @@ import { Component, Input } from "@angular/core";
   ]
 })
 export class DropdownComponent {
-  @Input() name: string;
+  public data: string[] = ["Snooker", "Tennis", "Cricket", "Football", "Rugby"];
 }
