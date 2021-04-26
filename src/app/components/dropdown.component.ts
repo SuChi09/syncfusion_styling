@@ -5,13 +5,7 @@ import { Component, Input } from "@angular/core";
   template: `
     <ejs-dropdownlist id="ddlelement" [dataSource]="data"></ejs-dropdownlist>
   `,
-  styles: [
-    `
-      h1 {
-        font-family: Lato;
-      }
-    `
-  ]
+  styles: []
 })
 export class DropdownComponent {
   public data: string[] = ["Snooker", "Tennis", "Cricket", "Football", "Rugby"];
