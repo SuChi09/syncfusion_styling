@@ -53,12 +53,14 @@ import {
   LineSeriesService
 } from "@syncfusion/ej2-angular-charts";
 import { ButtonExampleComponent } from "./components/button-example.component";
+import { ConfirmDialogComponent } from "./components/confirm-dialog.component";
 
 const routes: Routes = [
   { path: "button", component: ButtonExampleComponent },
   { path: "chart", component: ChartComponent },
   { path: "checkbox", component: CheckboxComponent },
   { path: "combobox", component: ComboboxComponent },
+  { path: "confirm", component: ConfirmDialogComponent },
   { path: "datepicker", component: DatePickerComponent },
   { path: "dialog", component: DialogComponent },
   { path: "dropdown", component: DropdownComponent },
@@ -112,7 +114,8 @@ const routes: Routes = [
     TextBoxComponent,
     ToastExampleComponent,
     TreeGridComponent,
-    ButtonExampleComponent
+    ButtonExampleComponent,
+    ConfirmDialogComponent
   ],
   providers: [
     CategoryService,
