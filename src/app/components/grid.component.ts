@@ -3,7 +3,16 @@ import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-grid",
   template: `
-    <ejs-grid [dataSource]="data" height="320" width="1000">
+    <ejs-grid
+      [dataSource]="data"
+      height="320"
+      width="1000"
+      [allowFiltering]="true"
+      [filterSettings]="filterSettings"
+      [allowResizing]="true"
+      [allowSelection]="false"
+      [allowSorting]="true"
+    >
       <e-columns>
         <e-column
           field="OrderID"
@@ -66,6 +75,10 @@ import { Component, OnInit } from "@angular/core";
 })
 export class GridComponent implements OnInit {
   public data: object[];
+
+  readonly filterSettings: any = {
+    type: "Excel"
+  };
 
   ngOnInit(): void {
     this.data = [

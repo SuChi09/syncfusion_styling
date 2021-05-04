@@ -35,14 +35,21 @@ import {
 import { DatePickerModule } from "@syncfusion/ej2-angular-calendars";
 import { DialogModule } from "@syncfusion/ej2-angular-popups";
 import {
+  FilterService,
   FreezeService,
   GridModule,
-  SelectionService
+  SelectionService,
+  SortService
 } from "@syncfusion/ej2-angular-grids";
 import { ListViewModule } from "@syncfusion/ej2-angular-lists";
 import { NumericTextBoxModule } from "@syncfusion/ej2-angular-inputs";
 import { ToastModule } from "@syncfusion/ej2-angular-notifications";
-import { TreeGridModule } from "@syncfusion/ej2-angular-treegrid";
+import {
+  SortService as TreeSortService,
+  FilterService as TreeFilterService,
+  ToolbarService,
+  TreeGridModule
+} from "@syncfusion/ej2-angular-treegrid";
 import {
   CategoryService,
   LegendService,
@@ -124,7 +131,11 @@ const routes: Routes = [
     DataLabelService,
     LineSeriesService,
     FreezeService,
-    SelectionService
+    SelectionService,
+    FilterService,
+    SortService,
+    TreeSortService,
+    TreeFilterService
   ],
   bootstrap: [AppComponent]
 })

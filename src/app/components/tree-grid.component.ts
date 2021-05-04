@@ -9,6 +9,11 @@ import { Component, OnInit } from "@angular/core";
       childMapping="subtasks"
       height="320"
       width="1000"
+      [allowFiltering]="true"
+      [filterSettings]="filterSettings"
+      [allowResizing]="true"
+      [allowSelection]="false"
+      [allowSorting]="true"
     >
       <e-columns>
         <e-column
@@ -43,6 +48,10 @@ import { Component, OnInit } from "@angular/core";
 })
 export class TreeGridComponent implements OnInit {
   public data: Object[];
+
+  readonly filterSettings: any = {
+    type: "Excel"
+  };
 
   ngOnInit(): void {
     this.data = [
